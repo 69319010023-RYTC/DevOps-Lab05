@@ -369,7 +369,7 @@ function onPointerDown(event) {
   const point = canvasPoint(event);
   for (let index = pieces.length - 1; index >= 0; index -= 1) {
     const piece = pieces[index];
-    if (!context.isPointInPath(piecePath(piece), point.x, point.y)) continue;
+    if (!context.isPointInPath(piecePath(piece), point.x * pixelRatio, point.y * pixelRatio)) continue;
     drag = {
       piece,
       offsetX: point.x - piece.x,
