@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101522">
+    <title>Car Jigsaw - เกมต่อภาพ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">PUZZLE ROOM / 01</p>
+          <h1>Car Jigsaw</h1>
+          <p class="subtitle">ลากชิ้นส่วนไปวางบนกระดานให้ครบทั้ง 20 ชิ้น</p>
+        </div>
+        <button class="reset-button" id="reset-button" type="button">เริ่มเกมใหม่</button>
+      </header>
+
+      <section class="game-card" aria-label="เกมต่อภาพรถยนต์">
+        <div class="game-toolbar">
+          <p class="game-status" id="game-status" aria-live="polite">กำลังโหลดภาพ...</p>
+          <div class="toolbar-actions">
+            <p class="progress" id="progress">0 <span>/ 20 ตำแหน่ง</span></p>
+            <button class="music-button" id="music-button" type="button" aria-label="เปิดหรือปิดเพลงประกอบ" aria-pressed="true">♫ เพลง: เปิด</button>
+          </div>
+        </div>
+        <div class="game-viewport">
+          <canvas id="puzzle" aria-label="กระดานจิ๊กซอว์ ลากชิ้นส่วนด้วยเมาส์ไปยังตำแหน่งที่ถูกต้อง">
+            เบราว์เซอร์นี้ไม่รองรับ Canvas
+          </canvas>
+        </div>
+        <p class="game-hint">วางชิ้นส่วนตรงไหนบนกระดานก็ได้ — จับย้ายได้ตลอด และวางใกล้ตำแหน่งที่ถูกต้องเพื่อจัดภาพให้ครบ</p>
+      </section>
+      <footer>ภาพรถยนต์ • จิ๊กซอว์ 5 × 4</footer>
+    </main>
+  </body>
+</html>
